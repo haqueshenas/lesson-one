@@ -1,2 +1,13 @@
-# lesson-one
-Lesson One is an independent research initiative that emerged from observations of suspected scientific misconduct and the institutional responses that followed. What began as a local experience gradually evolved into a broader investigation of how scientific systems respond to evidence, accountability, criticism, and the possibility of error.
+# Lesson One
+
+Lesson One is an independent research initiative exploring scientific misconduct, scientific correction, institutional accountability, and the dynamics of scientific self-regulation.
+
+### Visit the website
+
+https://haqueshenas.github.io/lesson-one/
+
+### About
+
+Lesson One originated from observations made while reporting scientific misconduct cases at Shiraz University and gradually evolved into a broader case study of how scientific systems respond when confronted with evidence suggesting that something may be wrong.
+
+The project combines case studies, reports, publications, datasets, and conceptual work related to scientific correction and research integrity.
