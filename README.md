@@ -1,4 +1,14 @@
+<p align="center">
+  <img src="logo.png" width="180">
+</p>
+
 # Lesson One
+
+The Liar Is Dead.
+
+A Journey Through the Fault Lines of Science
+
+
 
 Lesson One is an independent research initiative exploring scientific misconduct, scientific correction, institutional accountability, and the dynamics of scientific self-regulation.
 
