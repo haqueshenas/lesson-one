@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +9,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <meta name="description"
-content="The experience that inspired Lesson One: a case study of scientific integrity, institutional response, research accountability, and whistleblowing.">
+content="Ignored Warnings: A Case Study of Scientific Misconduct, Institutional Response, and Scientific Self-Correction">
 
 <link rel="icon" href="../assets/logo.png">
 
@@ -31,11 +30,37 @@ html {
     transform: translateY(-4px);
 }
 
-.case-image {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 12px;
+.section-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    padding: 2.5rem;
+}
+
+.archive-placeholder {
+    border: 2px dashed #cbd5e1;
+    border-radius: 1rem;
+    background: #f8fafc;
+}
+
+.prose-custom p {
+    margin-top: 1rem;
+    line-height: 1.9;
+}
+
+.prose-custom h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.prose-custom ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.prose-custom li {
+    margin-bottom: .6rem;
 }
 </style>
 
@@ -43,459 +68,416 @@ html {
 
 <body class="bg-gray-50 text-gray-800">
 
+<!-- ===================================================== -->
 <!-- HEADER -->
+<!-- ===================================================== -->
 
 <header class="bg-slate-900 text-white shadow-lg">
 
-<div class="max-w-6xl mx-auto px-6 py-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
 
-<div class="flex items-center justify-between">
+        <div class="flex items-center justify-between">
 
-<!-- Left Side -->
+            <div>
 
-<div>
+                <div class="flex items-center gap-6">
 
-<div class="flex items-center gap-6">
+                    <img
+                        src="../assets/logo-white.svg"
+                        alt="Lesson One Logo"
+                        class="h-14 w-auto">
 
-<img src="../assets/logo-white.svg"
-  alt="Lesson One Logo"
-  class="h-14 w-auto">
+                    <div>
 
-<div>
+                        <h1 class="text-4xl font-bold tracking-wide">
+                            My Experience
+                        </h1>
 
-<h1 class="text-4xl font-bold tracking-wide">
-My Experience
-</h1>
+                        <p class="mt-2 text-slate-300">
+                            The case study that inspired Lesson One
+                        </p>
 
-<p class="mt-2 text-slate-300">
-The case study that inspired Lesson One
-</p>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
+            <nav class="hidden md:flex gap-6 text-sm">
 
-<nav class="hidden md:flex gap-6 text-sm">
+                <a href="../" class="hover:text-red-300">
+                    Home
+                </a>
 
-<a href="../" class="hover:text-red-300">
-Home
-</a>
+                <a href="#overview" class="hover:text-red-300">
+                    Overview
+                </a>
 
-<a href="#overview" class="hover:text-red-300">
-Overview
-</a>
+                <a href="#cases" class="hover:text-red-300">
+                    Cases
+                </a>
 
-<a href="#cases" class="hover:text-red-300">
-Cases
-</a>
+                <a href="#observations" class="hover:text-red-300">
+                    Observations
+                </a>
 
-<a href="#lessons" class="hover:text-red-300">
-Lessons
-</a>
+                <a href="#lessons" class="hover:text-red-300">
+                    Lessons
+                </a>
 
-<a href="#documents" class="hover:text-red-300">
-Documents
-</a>
+                <a href="#documents" class="hover:text-red-300">
+                    Documents
+                </a>
 
-</nav>
+            </nav>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </header>
 
-
+<!-- ===================================================== -->
 <!-- HERO -->
+<!-- ===================================================== -->
 
 <section class="hero-gradient text-white">
 
-<div class="max-w-6xl mx-auto px-6 py-24">
+    <div class="max-w-6xl mx-auto px-6 py-24">
 
-<h2 class="text-5xl font-bold leading-tight max-w-4xl">
+        <h2 class="text-5xl font-bold leading-tight max-w-5xl">
+            Ignored Warnings:
+            <br>
+            A Case Study of Scientific Misconduct,
+            Institutional Response,
+            and Scientific Self-Correction
+        </h2>
 
-Ignored Warnings:
-A Case Study of Scientific Integrity,
-Institutional Response,
-and Whistleblowing
+        <p class="mt-8 text-xl text-slate-300 max-w-4xl leading-relaxed">
 
-</h2>
+            This page describes the experience that ultimately inspired
+            <strong>Lesson One</strong>.
 
-<p class="mt-8 text-xl text-slate-300 max-w-3xl">
+        </p>
 
-This report summarizes the experiences that ultimately inspired Lesson One,
-an ongoing project examining scientific misconduct, institutional accountability,
-research integrity, and the challenges of scientific self-correction.
+        <p class="mt-4 text-lg text-slate-300 max-w-4xl leading-relaxed">
 
-</p>
+            What began as an effort to understand a small number of disputed
+            scientific publications gradually evolved into a broader inquiry
+            concerning scientific accountability, institutional behavior,
+            transparency, whistleblowing, and the practical realities of
+            scientific self-correction.
 
-<div class="mt-10 flex flex-wrap gap-4">
+        </p>
 
-<a href="#overview"
-class="bg-red-700 hover:bg-red-800 px-6 py-3 rounded-lg font-semibold">
+        <div class="mt-10 flex flex-wrap gap-4">
 
-Read Summary
+            <a href="#overview"
+               class="bg-red-700 hover:bg-red-800 px-6 py-3 rounded-lg font-semibold">
 
-</a>
+                Read Summary
 
-<a href="#documents"
-class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-slate-900">
+            </a>
 
-View Documents
+            <a href="#documents"
+               class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-slate-900">
 
-</a>
+                View Documents
 
-</div>
+            </a>
 
-</div>
+        </div>
+
+    </div>
 
 </section>
 
+<!-- ===================================================== -->
 <!-- OVERVIEW -->
+<!-- ===================================================== -->
 
 <section id="overview" class="py-20">
 
-<div class="max-w-5xl mx-auto px-6">
+    <div class="max-w-5xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold mb-8">
-Overview
-</h2>
+        <h2 class="text-3xl font-bold mb-8">
+            Overview
+        </h2>
 
-<div class="bg-white rounded-2xl shadow p-8">
+        <div class="section-card prose-custom">
 
-<p class="leading-relaxed">
+            <h3 class="text-2xl font-bold">
+                Ignored Warnings
+            </h3>
 
-The events described here began during my doctoral studies in 2017, when I became concerned about the integrity of several research outputs produced within my academic environment. After reviewing available information, attending defense sessions, and consulting experienced specialists, I communicated my concerns privately and professionally before publication.
+            <h4 class="text-xl font-semibold mt-2 text-slate-600">
+                A Case Study of Scientific Misconduct,
+                Institutional Response,
+                and Scientific Self-Correction
+            </h4>
 
-</p>
+            <p>
+                This page describes the experience that ultimately inspired
+                <strong>Lesson One</strong>.
+            </p>
 
-<p class="mt-4 leading-relaxed">
+            <p>
+                The story began during my doctoral studies at Shiraz University
+                in 2017, when I became concerned about the integrity of several
+                research projects being conducted within my academic environment.
+                After examining available evidence, consulting experienced
+                researchers, and attending dissertation defense sessions,
+                I privately communicated my concerns before publication and
+                requested that questionable findings not be published until the
+                issues were resolved.
+            </p>
 
-Despite these efforts, the publications later appeared in scientific journals. Beginning in 2020, I contacted journals, publishers, ethics committees, and governmental organizations seeking clarification, investigation, and correction. Over several years, extensive correspondence and supporting documentation were submitted to multiple stakeholders.
+            <p class="font-semibold">
+                The warning was ignored.
+            </p>
 
-</p>
+            <p class="font-semibold">
+                The papers were published.
+            </p>
 
-<p class="mt-4 leading-relaxed">
+            <p>
+                What followed was no longer merely a disagreement about
+                individual publications. It became a years-long observation of
+                how different parts of the scientific system respond when
+                confronted with evidence suggesting that something may be wrong.
+            </p>
 
-The experience gradually evolved from a dispute about individual publications into a broader inquiry concerning how scientific institutions evaluate evidence, respond to allegations of misconduct, and maintain public trust when concerns remain unresolved.
+            <p>
+                The events described here involve scientific journals,
+                publishers, ethics committees, universities, government
+                agencies, regulatory bodies, and individual researchers.
+                Together, they form a case study of scientific correction
+                in practice.
+            </p>
 
-</p>
+            <p class="text-lg font-medium">
+                This is not simply a personal story.
+            </p>
 
-</div>
+            <p class="text-lg font-medium">
+                It is an attempt to document what happened after the warning.
+            </p>
 
-</div>
+        </div>
 
-</section>
-
-<!-- CASES -->
-
-<section id="cases" class="bg-gray-100 py-20">
-
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="text-3xl font-bold text-center mb-12">
-Principal Cases
-</h2>
-
-<div class="grid lg:grid-cols-2 gap-8">
-
-<!-- CASE 1 -->
-
-<div class="bg-white rounded-2xl shadow p-8 card-hover">
-
-<h3 class="text-2xl font-bold mb-4">
-Case One: The Lost Field
-</h3>
-
-<img
-src="images/case1.webp"
-alt="Case One - The Lost Field"
-class="case-image mb-6">
-
-<p class="leading-relaxed">
-
-The first case concerned a reported agricultural field experiment that was later published in peer-reviewed literature. Questions emerged regarding the reported location of the experiment, the consistency of related publications, and whether the experimental conditions described in the literature corresponded to an experiment that had actually been conducted as reported.
-
-</p>
-
-<p class="mt-4 leading-relaxed">
-
-Prior to publication, concerns were communicated directly to supervisors. Subsequently, supporting observations and documentation were shared with journals, publishers, and institutional bodies. The case involved issues related to experimental location, documentation, and the verification of published research claims.
-
-</p>
-
-<p class="mt-4 leading-relaxed">
-
-Although the concerns were formally reported and reviewed, the publications remained unchanged. The case ultimately raised broader questions regarding transparency, verification standards, and the practical challenges of evaluating contested scientific evidence.
-
-</p>
-
-</div>
-
-<!-- CASE 2 -->
-
-<div class="bg-white rounded-2xl shadow p-8 card-hover">
-
-<h3 class="text-2xl font-bold mb-4">
-Case Two: Phantom Equipment
-</h3>
-
-<img
-src="images/case2.webp"
-alt="Case Two - Phantom Equipment"
-class="case-image mb-6">
-
-<p class="leading-relaxed">
-
-The second case involved concerns regarding reported laboratory equipment, measurement procedures, environmental monitoring data, and methodological consistency across multiple publications associated with the same research program.
-
-</p>
-
-<p class="mt-4 leading-relaxed">
-
-Questions were raised regarding the availability and use of specific scientific instruments, discrepancies between dissertations and journal articles, reported measurement methodologies, and similarities among figures and datasets appearing in related outputs.
-
-</p>
-
-<p class="mt-4 leading-relaxed">
-
-These concerns were reported to journals, publishers, authors, and ethics committees. Investigations were conducted in some instances, yet the publications remained part of the scientific literature. The case highlighted the complexity of assessing methodological claims after publication and the difficulties associated with scientific correction.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<!-- INSTITUTIONAL RESPONSE -->
+<!-- ===================================================== -->
+<!-- PART I -->
+<!-- ===================================================== -->
 
-<section class="py-20">
+<section class="bg-gray-100 py-20">
 
-<div class="max-w-5xl mx-auto px-6">
+    <div class="max-w-5xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold mb-8">
-Institutional and Journal Responses
-</h2>
+        <div class="section-card prose-custom">
 
-<div class="bg-white rounded-2xl shadow p-8">
+            <h2 class="text-3xl font-bold mb-6">
+                Part I — Before Publication
+            </h2>
 
-<p class="leading-relaxed">
+            <h3 class="text-2xl font-bold">
+                The First Warning
+            </h3>
 
-Beginning in 2020, documentation and evidence were submitted to multiple stakeholders, including scientific journals, academic publishers, institutional ethics committees, governmental agencies, and regulatory organizations. The objective was to obtain clarification regarding the reported concerns and, where appropriate, encourage correction of the scientific record.
+            <p>
+                In 2017, while pursuing doctoral studies at Shiraz University,
+                I encountered evidence that raised serious concerns about the
+                integrity of several research projects and publications
+                associated with my academic environment.
+            </p>
 
-</p>
+            <p>
+                The concerns involved reported experiments, claimed
+                measurements, research methodologies, and the consistency of
+                published findings.
+            </p>
 
-<p class="mt-4 leading-relaxed">
+            <p>
+                Before any formal complaints were submitted, I chose a private
+                and professional path. I communicated my concerns directly to
+                the supervisors involved and requested that questionable
+                findings not be published until the issues had been adequately
+                clarified.
+            </p>
 
-Responses varied considerably. Some organizations acknowledged the concerns and initiated reviews, while others concluded their investigations without determining that corrective action was necessary. In several cases, requests for supporting information, clarification, or verification remained unanswered.
+            <p>
+                I believed that correction before publication would be easier,
+                fairer, and less damaging than correction afterward.
+            </p>
 
-</p>
+            <p class="font-semibold">
+                The warning did not prevent publication.
+            </p>
 
-<p class="mt-4 leading-relaxed">
+            <p>
+                Several years later, papers containing the same concerns
+                appeared in scientific journals.
+            </p>
 
-These experiences revealed significant practical challenges in the operation of scientific correction systems and contributed to broader questions concerning accountability, transparency, institutional incentives, and research governance.
+            <p>
+                At that point, the question was no longer whether I should
+                remain silent.
+            </p>
 
-</p>
+            <p class="font-medium">
+                The question became whether the scientific record should be
+                challenged.
+            </p>
 
-</div>
+            <p>
+                One aspect of these events appears unusually rare.
+            </p>
 
-</div>
+            <p class="font-semibold">
+                The warning came before publication.
+            </p>
 
-</section>
+            <p>
+                To my knowledge, documented cases in which concerns are
+                communicated directly to authors before publication—and later
+                reappear in substantially the same form within published
+                papers—are uncommon.
+            </p>
 
-<!-- LESSON ONE -->
+            <p>
+                Correspondence documenting those early warnings, including
+                emails sent to supervisors, remains available among the
+                supporting materials.
+            </p>
 
-<section class="bg-slate-900 text-white py-20">
+            <p>
+                The experience would eventually become the foundation of
+                Lesson One.
+            </p>
 
-<div class="max-w-5xl mx-auto px-6">
+        </div>
 
-<h2 class="text-3xl font-bold mb-8">
-From Individual Cases to Lesson One
-</h2>
-
-<p class="text-lg leading-relaxed text-slate-300">
-
-The original objective was straightforward: to understand whether specific scientific publications accurately reflected the underlying research and, if necessary, encourage correction of the scientific record.
-
-</p>
-
-<p class="text-3xl font-bold mt-8 mb-8">
-
-Why do scientific systems sometimes struggle to respond effectively to credible concerns, even when substantial evidence is presented?
-
-</p>
-
-<p class="text-lg leading-relaxed text-slate-300">
-
-Over time, this question became more important than any individual publication. It ultimately led to the creation of Lesson One, an ongoing effort to explore the institutional, procedural, and cultural factors that influence scientific self-correction and accountability.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- LESSONS -->
-
-<section id="lessons" class="py-20">
-
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="text-3xl font-bold text-center mb-12">
-Lessons Learned
-</h2>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-<div class="bg-white p-6 rounded-2xl shadow">
-Evidence alone does not always lead to correction.
-</div>
-
-<div class="bg-white p-6 rounded-2xl shadow">
-Scientific self-correction can be slower and more complex than commonly assumed.
-</div>
-
-<div class="bg-white p-6 rounded-2xl shadow">
-Institutional incentives may influence how concerns are evaluated.
-</div>
-
-<div class="bg-white p-6 rounded-2xl shadow">
-Transparency remains essential for scientific trust.
-</div>
-
-<div class="bg-white p-6 rounded-2xl shadow">
-Accountability is necessary for meaningful correction.
-</div>
-
-<div class="bg-white p-6 rounded-2xl shadow">
-Persistence is often required when pursuing unresolved integrity concerns.
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<!-- DOCUMENTS -->
+<!-- ===================================================== -->
+<!-- PART II -->
+<!-- ===================================================== -->
 
-<section id="documents" class="bg-gray-100 py-20">
+<section id="cases" class="py-20">
 
-<div class="max-w-5xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-12">
-Documents and Resources
-</h2>
+        <h2 class="text-3xl font-bold text-center mb-12">
+            Part II — The Cases
+        </h2>
 
-<div class="grid md:grid-cols-2 gap-8">
+        <div class="grid lg:grid-cols-2 gap-8">
 
-<div class="bg-white rounded-2xl shadow p-8 card-hover">
+            <!-- CASE 1 -->
 
-<h3 class="text-xl font-bold mb-4">
-Lesson One – English Report
-</h3>
+            <div class="bg-white rounded-2xl shadow p-8 card-hover">
 
-<p>
-Complete documentation, figures, references, supporting materials, and background information.
-</p>
+                <h3 class="text-2xl font-bold mb-6">
+                    Case One:
+                    The Lost Field of Shiraz University
+                </h3>
 
-<a href="documents/Lesson-One-ME-English.pdf"
-class="inline-block mt-4 text-red-700 font-semibold">
+                <img
+                    src="images/lost-field.webp"
+                    alt="The Lost Field of Shiraz University"
+                    class="w-full h-64 object-cover rounded-xl mb-6">
 
-Download PDF →
+                <p class="leading-relaxed">
+                    The first case concerned a reported agricultural field
+                    experiment that was later published in the scientific
+                    literature.
+                </p>
 
-</a>
+                <p class="mt-4 leading-relaxed">
+                    The publication described a multi-season field experiment
+                    and reported that the work had been conducted at specific
+                    locations associated with the research.
+                </p>
 
-</div>
+                <p class="mt-4 leading-relaxed">
+                    However, based on direct familiarity with the locations,
+                    the timing of the reported experiment, supporting
+                    documentation, witness testimony, satellite imagery,
+                    and additional evidence examined before publication,
+                    serious questions emerged regarding whether the experiment
+                    had actually been conducted as reported.
+                </p>
 
-<div class="bg-white rounded-2xl shadow p-8 card-hover">
+                <p class="mt-4 leading-relaxed">
+                    The case eventually expanded into broader questions
+                    concerning experimental location, documentation,
+                    verification of research claims, and institutional
+                    willingness to examine contradictory evidence.
+                </p>
 
-<h3 class="text-xl font-bold mb-4">
-Lesson One – Farsi
-</h3>
+                <p class="mt-4 leading-relaxed">
+                    Despite repeated reports to journals, publishers, and
+                    institutional bodies, the publications remain unchanged.
+                </p>
 
-<p>
-Persian-language version of Lesson One and related materials.
-</p>
+            </div>
 
-<a href="documents/Lesson-One-ME-Farsi.pdf"
-class="inline-block mt-4 text-red-700 font-semibold">
+            <!-- CASE 2 -->
 
-Download PDF →
+            <div class="bg-white rounded-2xl shadow p-8 card-hover">
 
-</a>
+                <h3 class="text-2xl font-bold mb-6">
+                    Case Two:
+                    Phantom Equipment
+                </h3>
 
-</div>
+                <img
+                    src="images/phantom-equipment.webp"
+                    alt="Phantom Equipment"
+                    class="w-full h-64 object-cover rounded-xl mb-6">
 
-</div>
+                <p class="leading-relaxed">
+                    The second case involved a series of publications
+                    associated with the same research group.
+                </p>
 
-</div>
+                <p class="mt-4 leading-relaxed">
+                    Concerns emerged regarding the reported use of scientific
+                    instruments, environmental measurements, methodological
+                    descriptions, and the consistency of data presented across
+                    multiple research outputs.
+                </p>
+
+                <p class="mt-4 leading-relaxed">
+                    Questions were raised regarding the availability of
+                    specific laboratory and field equipment, discrepancies
+                    between dissertations and journal articles, conflicting
+                    methodological descriptions, and apparent duplication
+                    of figures and data.
+                </p>
+
+                <p class="mt-4 leading-relaxed">
+                    Investigations were conducted in some cases.
+                    No substantial correction followed.
+                </p>
+
+                <p class="mt-4 leading-relaxed">
+                    The case highlighted a central challenge of scientific
+                    correction:
+                    once questionable findings become part of the published
+                    literature, verifying what actually happened can become
+                    remarkably difficult.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
-
-<!-- CLOSING -->
-
-<section class="py-20">
-
-<div class="max-w-4xl mx-auto px-6 text-center">
-
-<h2 class="text-3xl font-bold mb-8">
-Closing Reflection
-</h2>
-
-<p class="text-xl leading-relaxed">
-
-This project began with specific concerns regarding scientific integrity and the reliability of published research. Over time, it evolved into a broader inquiry into how scientific institutions identify problems, evaluate evidence, implement correction, and maintain public trust.
-
-</p>
-
-<p class="mt-8 text-2xl font-semibold text-slate-700">
-
-How can scientific systems become more capable of recognizing mistakes, correcting them, and learning from them?
-
-</p>
-
-<p class="mt-6 text-lg text-slate-600">
-
-That question continues to guide Lesson One.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="bg-slate-900 text-slate-300 py-12">
-
-<div class="max-w-6xl mx-auto px-6 text-center">
-
-<p class="italic">
-"Truth Needs No Protection."
-</p>
-
-<img src="../assets/logo-white.svg"
-     alt="Lesson One Logo"
-     class="h-12 w-auto mx-auto mt-6 mb-6">
-
-<p>
-© 2026 Lesson One
-</p>
-
-<p class="mt-2">
-Abbas Haghshenas
-</p>
-
-</div>
-
-</footer>
-
-</body>
-</html>
