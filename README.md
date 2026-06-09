@@ -4,9 +4,9 @@
 
 # Lesson One
 
-The Liar Is Dead.
+***The Liar Is Dead.***
 
-A Journey Through the Fault Lines of Science
+**A Journey Through the Fault Lines of Science**
 
 
 
