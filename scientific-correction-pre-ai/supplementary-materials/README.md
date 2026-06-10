@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../../logo.png" width="160">
+  <img src="../../logo.png" width="80">
 </p>
 
 # Supplementary Materials
@@ -14,7 +14,7 @@ Part of the broader **Lesson One** project.
 
 ## Lesson One
 
-**The Liar Is Dead.**
+***The Liar Is Dead.***
 
 *A Journey Through the Fault Lines of Science*
 
