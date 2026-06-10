@@ -7,6 +7,7 @@
 This repository contains the supplementary materials associated with:
 
 **Scientific Correction in the Pre-AI Era: Lessons from Global Retraction Dynamics**
+<br>https://doi.org/10.21203/rs.3.rs-9956739/v1
 
 Part of the broader **Lesson One** project.
 
