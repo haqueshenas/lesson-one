@@ -17,13 +17,6 @@ content="Ignored Warnings: A Case Study of Scientific Misconduct, Institutional 
 html {
     scroll-behavior: smooth;
 }
-
-.project-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}    
     
 .hero-gradient {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -76,6 +69,51 @@ html {
 
 <body class="bg-gray-50 text-gray-800">
 
+<!-- PROJECT NAVIGATION -->
+
+<nav class="sticky top-0 z-50 bg-slate-950 border-b border-slate-800">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="flex flex-wrap justify-center gap-6 py-3 text-sm">
+
+            <a href="/lesson-one/"
+               class="text-slate-300 hover:text-white transition">
+                Home
+            </a>
+
+            <a href="/lesson-one/my-experience/"
+               class="text-slate-300 hover:text-white transition">
+                My Experience
+            </a>
+
+            <a href="/lesson-one/my-experience/#story-archive/"
+               class="text-slate-300 hover:text-white transition">
+                Story Archive
+            </a>
+
+            <a href="/lesson-one/self-retraction-as-redemption/"
+               class="text-slate-300 hover:text-white transition">
+                Self-Retraction
+            </a>
+
+            <a href="/lesson-one/scientific-correction-pre-ai/"
+               class="text-slate-300 hover:text-white transition">
+                Scientific Correction
+            </a>
+
+            <a href="/lesson-one/my-experience/#documents"
+               class="text-slate-300 hover:text-white transition">
+                Documents
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+    
 <!-- HEADER -->
 <header class="bg-slate-900 text-white shadow-lg">
     <div class="max-w-6xl mx-auto px-6 py-8">
@@ -113,42 +151,6 @@ html {
     </div>
 </header>
 
-<nav class="project-nav bg-white/95 border-b shadow-sm">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="flex flex-wrap justify-center gap-6 py-4 text-sm font-medium">
-
-            <a href="/" class="hover:text-red-700">
-                Home
-            </a>
-
-            <a href="/my-experience/" class="hover:text-red-700">
-                My Experience
-            </a>
-
-            <a href="/self-retraction/" class="hover:text-red-700">
-                Self-Retraction
-            </a>
-
-            <a href="/scientific-correction/" class="hover:text-red-700">
-                Scientific Correction
-            </a>
-
-            <a href="/documents/" class="hover:text-red-700">
-                Documents
-            </a>
-
-            <a href="/my-experience/story-archive/" class="hover:text-red-700">
-                Story Archive
-            </a>
-
-        </div>
-
-    </div>
-
-</nav>
-    
 <!-- HERO -->
 <section class="hero-gradient text-white">
 
