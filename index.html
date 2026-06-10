@@ -18,6 +18,13 @@ content="Lesson One is an independent long-term initiative exploring scientific 
 html {
     scroll-behavior: smooth;
 }
+
+.project-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}    
 </style>
 
 </head>
@@ -87,6 +94,43 @@ Author
 </div>
 
 </header>
+
+<nav class="project-nav bg-white/95 border-b shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex flex-wrap justify-center gap-6 py-4 text-sm font-medium">
+
+            <a href="/" class="hover:text-red-700">
+                Home
+            </a>
+
+            <a href="/my-experience/" class="hover:text-red-700">
+                My Experience
+            </a>
+
+            <a href="/self-retraction/" class="hover:text-red-700">
+                Self-Retraction
+            </a>
+
+            <a href="/scientific-correction/" class="hover:text-red-700">
+                Scientific Correction
+            </a>
+
+            <a href="/documents/" class="hover:text-red-700">
+                Documents
+            </a>
+
+            <a href="/my-experience/story-archive/" class="hover:text-red-700">
+                Story Archive
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>    
+    
     
 <!-- HERO -->
 
@@ -128,56 +172,7 @@ Explore the Research
 
 </section>
     
-
-<!-- PROJECT NAVIGATION -->
-
-<section class="bg-white border-b border-gray-200">
-
-    <div class="max-w-6xl mx-auto px-6 py-8">
-
-        <h2 class="text-center text-lg font-semibold text-slate-800 mb-6">
-            Explore the Lesson One Project
-        </h2>
-
-        <div class="flex flex-wrap justify-center gap-4">
-
-            <a href="../"
-               class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition">
-                Home
-            </a>
-
-            <a href="../my-experience/"
-               class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition">
-                My Experience
-            </a>
-
-            <a href="../self-retraction/"
-               class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition">
-                Self-Retraction
-            </a>
-
-            <a href="../scientific-correction/"
-               class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition">
-                Scientific Correction
-            </a>
-
-            <a href="../documents/"
-               class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition">
-                Documents
-            </a>
-
-            <a href="../my-experience/story-archive/"
-               class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition">
-                Story Archive
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-    
-    
+  
 <!-- PORTFOLIO -->
 
 <section id="portfolio" class="py-20">
