@@ -1,204 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A dated record of new evidence, research findings, correspondence, and developments concerning the matters documented in Lesson One.">
-  <meta name="theme-color" content="#111827">
-  <title>Updates &amp; Developments | Lesson One</title>
-  <link rel="icon" href="../assets/logo-white.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://haqueshenas.github.io/lesson-one/updates/">
-  <!-- Use the project's own compiled Tailwind CSS (v2.2.19), not the latest Tailwind CDN. -->
-  <link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Updates &amp; Developments | Lesson One</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<meta name="description"
+content="A chronological record of new evidence, research findings, correspondence, and developments concerning Lesson One.">
+
+<link rel="icon" href="../assets/logo.png">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.section-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    padding: 2rem;
+}
+
+.prose-section p {
+    margin-top: 1rem;
+    line-height: 1.9;
+}
+
+.prose-section ul,
+.prose-section ol {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.prose-section ul {
+    list-style-type: disc;
+}
+
+.prose-section ol {
+    list-style-type: decimal;
+}
+
+.prose-section li {
+    margin-bottom: .5rem;
+}
+
+.supporting-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+</style>
+
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Primary navigation -->
-  <nav class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800" aria-label="Primary navigation">
+<!-- PROJECT NAVIGATION -->
+<nav class="sticky top-0 z-50 bg-slate-950 border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-wrap justify-center gap-6 py-3 text-sm">
-        <a href="/lesson-one/" class="text-gray-300 hover:text-white transition">Home</a>
-        <a href="/lesson-one/my-experience/" class="text-gray-300 hover:text-white transition">My Experience</a>
-        <a href="/lesson-one/updates/" class="text-white font-semibold transition" aria-current="page">Updates</a>
-        <a href="/lesson-one/self-retraction-as-redemption/" class="text-gray-300 hover:text-white transition">Self-Retraction</a>
-        <a href="/lesson-one/scientific-correction-pre-ai/" class="text-gray-300 hover:text-white transition">Scientific Correction</a>
-        <a href="/lesson-one/my-experience/#story-archive" class="text-gray-300 hover:text-white transition">Story Archive</a>
-        <a href="/lesson-one/my-experience/#documents" class="text-gray-300 hover:text-white transition">Documents</a>
-      </div>
+        <div class="flex flex-wrap justify-center gap-6 py-3 text-sm">
+            <a href="/lesson-one/" class="text-slate-300 hover:text-white transition">Home</a>
+            <a href="/lesson-one/my-experience/" class="text-slate-300 hover:text-white transition">My Experience</a>
+            <a href="/lesson-one/updates/" class="text-slate-300 hover:text-white transition">Updates</a>
+            <a href="/lesson-one/self-retraction-as-redemption/" class="text-slate-300 hover:text-white transition">Self-Retraction</a>
+            <a href="/lesson-one/scientific-correction-pre-ai/" class="text-slate-300 hover:text-white transition">Scientific Correction</a>
+            <a href="/lesson-one/my-experience/#story-archive" class="text-slate-300 hover:text-white transition">Story Archive</a>
+            <a href="/lesson-one/my-experience/#documents" class="text-slate-300 hover:text-white transition">Documents</a>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <!-- Page heading: restrained title block, consistent with the project's internal pages -->
-  <header class="bg-white border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-6 py-8 md:py-10">
-      <p class="text-sm font-semibold uppercase tracking-wider text-red-700">Lesson One</p>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Updates &amp; Developments</h1>
-      <p class="mt-3 max-w-4xl text-base md:text-lg leading-relaxed text-gray-600">
-        A chronological record of new evidence, research findings, correspondence, and subsequent developments.
-      </p>
+<!-- HEADER: follows the My Experience page structure -->
+<header class="bg-slate-900 text-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="../assets/logo-white.svg" alt="Lesson One Logo" class="h-14 w-auto">
+                <div>
+                    <h1 class="text-4xl font-bold tracking-wide">Updates &amp; Developments</h1>
+                    <p class="mt-2 text-slate-300">A chronological record of new evidence and developments</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
+</header>
 
-  <!-- Section navigation -->
-  <div class="bg-white border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-6">
-      <nav class="flex flex-wrap gap-6 py-3 text-sm" aria-label="Updates page navigation">
-        <a href="#overview" class="text-gray-600 hover:text-red-700 transition">Overview</a>
-        <a href="#update-2026-11-27" class="text-gray-600 hover:text-red-700 transition">27 November 2026</a>
-        <a href="#publications-cited" class="text-gray-600 hover:text-red-700 transition">Publications Cited</a>
-      </nav>
-    </div>
-  </div>
-
-  <main class="py-10 md:py-12">
-    <div class="max-w-5xl mx-auto px-6">
-
-      <section id="overview" class="mb-8" aria-labelledby="overview-heading">
-        <h2 id="overview-heading" class="text-2xl font-bold text-gray-900 mb-3">A continuing record</h2>
-        <p class="text-base leading-relaxed text-gray-700">
-          This page records developments that have occurred or come to light after the original Lesson One narrative was prepared. Entries are dated and distinguish published information, newly obtained documents, independent calculations, interpretations, correspondence, and matters that remain unresolved.
+<!-- HERO: uses the same dark gradient treatment as My Experience -->
+<section class="hero-gradient text-white">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+        <h2 class="text-5xl font-bold leading-tight max-w-5xl">A continuing record</h2>
+        <p class="mt-8 text-xl text-slate-300 max-w-4xl">
+            This page records developments that have occurred or come to light after the original Lesson One narrative was prepared. Entries are dated and distinguish published information, newly obtained documents, independent calculations, interpretations, correspondence, and matters that remain unresolved.
         </p>
-      </section>
+    </div>
+</section>
 
-      <article id="update-2026-11-27" class="bg-white border border-gray-200 rounded-xl shadow-md p-6 md:p-8 mb-10">
-        <div class="flex flex-wrap items-center gap-3 mb-4">
-          <time datetime="2026-11-27" class="inline-block rounded bg-gray-100 text-gray-800 px-3 py-1 text-sm font-semibold">
+<!-- UPDATES -->
+<section class="bg-gray-100 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+<article class="section-card prose-section mb-10" id="update-2026-11-27">
+<div class="flex flex-wrap items-center gap-3 mb-4">
+<time class="inline-block rounded bg-gray-100 text-gray-800 px-3 py-1 text-sm font-semibold" datetime="2026-11-27">
             27 November 2026
           </time>
-          <span class="text-sm font-semibold text-red-700">Research chronology · Case Two</span>
-        </div>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-5">
+<span class="text-sm font-semibold text-red-700">Research chronology · Case Two</span>
+</div>
+<h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-5">
           Apparent discrepancy between the reported phenological stages and harvest dates
         </h2>
-
-        <div class="bg-gray-50 border-l-4 border-gray-700 p-4 mb-7">
-          <p class="text-sm leading-relaxed text-gray-700">
-            <strong>Procedural status:</strong> The chronology concern and supporting material were included in a supplementary submission to Taylor &amp; Francis on 27 November 2026.
-          </p>
-        </div>
-
-        <div class="space-y-4 text-base leading-relaxed text-gray-700">
-          <p>
+<div class="bg-gray-50 border-l-4 border-gray-700 p-4 mb-7">
+<p class="text-sm leading-relaxed text-gray-700"><strong>Procedural status:</strong> The chronology concern and supporting material were included in a supplementary submission to Taylor &amp; Francis on 27 November 2026.</p>
+</div>
+<div class="space-y-4 text-base leading-relaxed text-gray-700">
+<p>
             I would like to draw attention to an apparent chronological discrepancy between the harvest dates reported in the paper <em>Fresh sweet corn yield sensitivity to deficit nitrogen and water conditions</em> and the phenological development reported in a related publication by the same research group:
           </p>
-
-          <p class="pl-4 border-l-2 border-gray-200">
-            <strong>Jafarikouhini, N., Kazemeini, S. A., &amp; Sinclair, T. R. (2020).</strong>
-            <em>Sweet Corn Ontogeny in Response to Irrigation and Nitrogen Fertilization.</em>
-            <em>Journal of Horticulture and Plant Research</em>, 10, 23–29.
-            <a class="text-blue-700 hover:underline break-all" href="https://doi.org/10.18052/www.scipress.com/JHPR.10.23" target="_blank" rel="noopener noreferrer">https://doi.org/10.18052/www.scipress.com/JHPR.10.23</a>
-          </p>
-
-          <p>
+<p class="pl-4 border-l-2 border-gray-200">
+<strong>Jafarikouhini, N., Kazemeini, S. A., &amp; Sinclair, T. R. (2020).</strong>
+<em>Sweet Corn Ontogeny in Response to Irrigation and Nitrogen Fertilization.</em>
+<em>Journal of Horticulture and Plant Research</em>, 10, 23–29.
+            <a class="text-blue-700 hover:underline break-all" href="https://doi.org/10.18052/www.scipress.com/JHPR.10.23" rel="noopener noreferrer" target="_blank">https://doi.org/10.18052/www.scipress.com/JHPR.10.23</a>
+</p>
+<p>
             The 2021 paper, first published online on 28 October 2021 and subsequently included in the 2022 journal issue, reports that sweet corn was sown on 18 June 2014 and 10 July 2015, and harvested on 21 September 2014 and 5 October 2015, respectively, when kernel water content had declined to 72–75% (Materials and Methods, p. 595).
           </p>
-
-          <p>However, the related JHPR paper reports the following phenological durations:</p>
-
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Sowing to silking: 66–72 days in 2014 and 67–73 days in 2015.</li>
-            <li>Silking to milking: 31.0–32.2 days in 2014 and 33.2–34.0 days in 2015, depending on irrigation treatment.</li>
-          </ul>
-
-          <p>
+<p>However, the related JHPR paper reports the following phenological durations:</p>
+<ul class="list-disc pl-6 space-y-2">
+<li>Sowing to silking: 66–72 days in 2014 and 67–73 days in 2015.</li>
+<li>Silking to milking: 31.0–32.2 days in 2014 and 33.2–34.0 days in 2015, depending on irrigation treatment.</li>
+</ul>
+<p>
             The JHPR paper defines milking as the stage at which 50% of the plants show kernels containing milky-white fluid, corresponding to approximately 80% kernel moisture. It also states that the milking stage, and hence the harvest date, can be predicted at approximately 506 temperature units (TU) after silking.
           </p>
-
-          <p>
+<p>
             Using the treatment-level mean durations reported in JHPR, the approximate expected calendar windows for milking are 24–30 September 2014 and 19–24 October 2015. These are calculated dates, not dates directly reported by the authors.
           </p>
-
-          <p>
+<p>
             Consequently, the harvest dates reported in the 2021 paper precede these approximate milking windows by about 3–9 days in 2014 and 14–19 days in 2015. This is particularly notable for 2015. Furthermore, the reported harvest kernel water content of 72–75% is lower than the approximately 80% moisture level used to define the milking stage in the JHPR paper.
           </p>
-
-          <p>
+<p>
             Could the authors clarify how these harvest dates and kernel moisture levels are reconciled with the phenological observations reported in the related JHPR study? In particular, it would be helpful to clarify whether the harvest dates, silking and milking observations refer to the same experimental plots and treatments, and whether the kernel-moisture measurements were determined using comparable methods and on the same basis.
           </p>
-
-          <p>I raise this point as a request for clarification of the published experimental chronology.</p>
-        </div>
-
-        <section class="mt-8" aria-labelledby="supporting-illustrations">
-          <h3 id="supporting-illustrations" class="text-xl font-bold text-gray-900 mb-3">Supporting illustrations</h3>
-          <p class="text-base leading-relaxed text-gray-700 mb-5">
+<p>I raise this point as a request for clarification of the published experimental chronology.</p>
+</div>
+<section aria-labelledby="supporting-illustrations" class="mt-8">
+<h3 class="text-xl font-bold text-gray-900 mb-3" id="supporting-illustrations">Supporting illustrations</h3>
+<p class="text-base leading-relaxed text-gray-700 mb-5">
             The following images are provided to help readers compare the information cited from the two publications and the resulting calendar chronology. The publication-page images show the relevant pages supplied for this entry. The comparative timeline is an explanatory illustration, not a figure published in either article.
           </p>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            <figure class="border border-gray-200 rounded-lg p-3 bg-white">
-              <img src="images/jci-2021-page-04.jpg" alt="Page image from the 2021 Journal of Crop Improvement article, showing the reported methods and harvest information" class="w-full h-auto object-contain rounded" loading="lazy">
-              <figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+<figure class="border border-gray-200 rounded-lg p-3 bg-white">
+<img alt="Page image from the 2021 Journal of Crop Improvement article, showing the reported methods and harvest information" class="w-full h-auto object-contain rounded" loading="lazy" src="images/jci-2021-page-04.jpg"/>
+<figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
                 Figure 1. Supplied page image from Jafarikouhini et al., <em>Fresh sweet corn yield sensitivity to deficit nitrogen and water conditions</em>.
               </figcaption>
-            </figure>
-
-            <figure class="border border-gray-200 rounded-lg p-3 bg-white">
-              <img src="images/jhpr-2020-page-01.jpg" alt="First supplied page image from the 2020 JHPR article" class="w-full h-auto object-contain rounded" loading="lazy">
-              <figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
+</figure>
+<figure class="border border-gray-200 rounded-lg p-3 bg-white">
+<img alt="First supplied page image from the 2020 JHPR article" class="w-full h-auto object-contain rounded" loading="lazy" src="images/jhpr-2020-page-01.jpg"/>
+<figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
                 Figure 2. First supplied page image from Jafarikouhini et al. (2020), <em>Journal of Horticulture and Plant Research</em>.
               </figcaption>
-            </figure>
-
-            <figure class="border border-gray-200 rounded-lg p-3 bg-white">
-              <img src="images/jhpr-2020-page-02.jpg" alt="Second supplied page image from the 2020 JHPR article" class="w-full h-auto object-contain rounded" loading="lazy">
-              <figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
+</figure>
+<figure class="border border-gray-200 rounded-lg p-3 bg-white">
+<img alt="Second supplied page image from the 2020 JHPR article" class="w-full h-auto object-contain rounded" loading="lazy" src="images/jhpr-2020-page-02.jpg"/>
+<figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
                 Figure 3. Second supplied page image from the 2020 JHPR article.
               </figcaption>
-            </figure>
-
-            <figure class="border border-gray-200 rounded-lg p-3 bg-white">
-              <img src="images/jhpr-2020-page-03.jpg" alt="Third supplied page image from the 2020 JHPR article" class="w-full h-auto object-contain rounded" loading="lazy">
-              <figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
+</figure>
+<figure class="border border-gray-200 rounded-lg p-3 bg-white">
+<img alt="Third supplied page image from the 2020 JHPR article" class="w-full h-auto object-contain rounded" loading="lazy" src="images/jhpr-2020-page-03.jpg"/>
+<figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
                 Figure 4. Third supplied page image from the 2020 JHPR article.
               </figcaption>
-            </figure>
-          </div>
-
-          <figure class="mt-5 border border-gray-200 rounded-lg p-3 bg-white">
-            <img src="images/phenology-timeline.png" alt="Comparative timeline of reported sowing and harvest dates and the approximate milking windows calculated from the JHPR phenological durations" class="w-full h-auto object-contain rounded" loading="lazy">
-            <figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
+</figure>
+</div>
+<figure class="mt-5 border border-gray-200 rounded-lg p-3 bg-white">
+<img alt="Comparative timeline of reported sowing and harvest dates and the approximate milking windows calculated from the JHPR phenological durations" class="w-full h-auto object-contain rounded" loading="lazy" src="images/phenology-timeline.png"/>
+<figcaption class="text-sm text-gray-600 leading-relaxed mt-3">
               Figure 5. Comparative timeline illustrating the relationship between the reported sowing and harvest dates and the approximate milking windows calculated from treatment-level mean durations in the related JHPR paper.
             </figcaption>
-          </figure>
-        </section>
-
-        <section id="publications-cited" class="mt-8 border-t border-gray-200 pt-6" aria-labelledby="references-heading">
-          <h3 id="references-heading" class="text-xl font-bold text-gray-900 mb-3">Publications cited</h3>
-          <ol class="list-decimal pl-6 space-y-3 text-sm leading-relaxed text-gray-700">
-            <li>
+</figure>
+</section>
+<section aria-labelledby="references-heading" class="mt-8 border-t border-gray-200 pt-6" id="publications-cited">
+<h3 class="text-xl font-bold text-gray-900 mb-3" id="references-heading">Publications cited</h3>
+<ol class="list-decimal pl-6 space-y-3 text-sm leading-relaxed text-gray-700">
+<li>
               Jafarikouhini, N., Kazemeini, S. A., Ghadiri, H., &amp; Lagrimini, M. (2022).
               Fresh sweet corn yield sensitivity to deficit nitrogen and water conditions.
               <em>Journal of Crop Improvement, 36</em>(4), 593–603.
               First published online 28 October 2021.
-              <a class="text-blue-700 hover:underline break-all" href="https://doi.org/10.1080/15427528.2021.1995560" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/15427528.2021.1995560</a>
-            </li>
-            <li>
+              <a class="text-blue-700 hover:underline break-all" href="https://doi.org/10.1080/15427528.2021.1995560" rel="noopener noreferrer" target="_blank">https://doi.org/10.1080/15427528.2021.1995560</a>
+</li>
+<li>
               Jafarikouhini, N., Kazemeini, S. A., &amp; Sinclair, T. R. (2020).
               Sweet Corn Ontogeny in Response to Irrigation and Nitrogen Fertilization.
               <em>Journal of Horticulture and Plant Research, 10</em>, 23–29.
-              <a class="text-blue-700 hover:underline break-all" href="https://doi.org/10.18052/www.scipress.com/JHPR.10.23" target="_blank" rel="noopener noreferrer">https://doi.org/10.18052/www.scipress.com/JHPR.10.23</a>
-            </li>
-          </ol>
-        </section>
+              <a class="text-blue-700 hover:underline break-all" href="https://doi.org/10.18052/www.scipress.com/JHPR.10.23" rel="noopener noreferrer" target="_blank">https://doi.org/10.18052/www.scipress.com/JHPR.10.23</a>
+</li>
+</ol>
+</section>
 
-      <div class="text-center">
-        <a href="/lesson-one/my-experience/" class="inline-block bg-red-700 hover:bg-red-800 text-white px-6 py-3 rounded-lg font-semibold transition">
-          Return to My Experience
-        </a>
-      </div>
+</article>
     </div>
-  </main>
+</section>
 
-  <footer class="bg-gray-900 text-gray-300 py-8 mt-8">
+<!-- FOOTER: follows the My Experience page structure -->
+<footer class="bg-slate-900 text-slate-300 py-12">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <p class="text-lg font-semibold text-white">&quot;The Liar Is Dead.&quot;</p>
-      <p class="mt-3 text-sm">© 2026 Lesson One</p>
-      <p class="mt-1 text-sm">Abbas Haghshenas</p>
+        <p class="italic">&quot;Truth Needs No Protection.&quot;</p>
+        <img src="../assets/logo-white.svg" alt="Lesson One Logo" class="h-12 w-auto mx-auto mt-6 mb-6">
+        <p>© 2026 Lesson One</p>
+        <p class="mt-2">Abbas Haghshenas</p>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>
